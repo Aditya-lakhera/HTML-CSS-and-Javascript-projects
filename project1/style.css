@@ -1,0 +1,421 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    line-height: 1.5;
+    color:#333;
+    background-color: #fdfdfd;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+
+
+/*header start*/
+header{
+    background-color: #0e3959;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.maintopic {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+
+}
+
+nav a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav a:hover{
+    color:#ffca25;
+}
+/*header end*/
+
+
+
+
+/*home */
+#home{
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bg-video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*maintains aspect ratio*/
+    z-index:1;
+
+
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index:2;
+}
+
+.home-content{
+    position: relative;
+    z-index: 3;
+    max-width: auto;
+    text-align: center;
+
+}
+
+.home-content h2{
+    font-size:3rem;
+    margin-bottom: 15px;
+
+}
+
+.home-content p{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+
+}
+
+.home-content .btn{
+    background: #ffca28;
+    color:#0e3959;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+
+/*alignment*/
+.section{
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+
+}
+
+.section .container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/*destionations*/
+#destinations {
+    padding: 80px 0;
+    background-color: #fdfdfd;
+    text-align: center;
+
+}
+#destinations h2 {
+    font-size: 2.2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #222;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.destinations-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.destinations-card{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+
+}
+
+
+.destinations-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destinations-card h3{
+    padding: 15px;
+    font-size: 1.4rem;
+    color: #333;
+    background-color: #fff;
+
+}
+
+.destinations-card a{
+    font-size: 0.7rem;
+    color:#333;
+    text-decoration: none;
+}
+
+.destinations-card:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*packages*/
+#packages{
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+
+}
+
+#packages h2{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #222;
+    text-decoration: underline;
+
+}
+
+.packages-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.packages{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.packages img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.packages h3{
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color:#0e3959;
+
+}
+
+.packages p{
+    padding: 10px 10px;
+    color: #333;
+    font-size: 1 rem;;
+}
+
+.packages button{
+    background-color: #0e3959;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.packages button:hover{
+    background: #ffca28;
+    color:#0e3959;
+    transform:scale(1);
+}
+
+.packages:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Testimonial*/
+#testimonials{
+    padding: 60px 0;
+    
+}
+
+#testimonials h2{
+    text-align: center;
+    color: #0e3959;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    gap: 25px;
+
+
+}
+
+.testimonials{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+}
+
+.testimonials i{
+    color: #ffca25;
+    margin-bottom: 12px;
+}
+
+.testimonials p{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonials h4{
+    color: #0e3959;
+    margin-top: 10px;
+
+}
+
+/*Booking*/
+#bookings{
+    padding: 60px 0;
+    background: #fdfdfd;
+
+}
+
+#bookings h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #0e3959;
+}
+
+#bookings p{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+form input,
+form select,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+form button{
+    background: #0e3959;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+form button:hover{
+    background: #ffca28;
+    color: #0e3959;
+}
+
+
+footer{
+    background-color: #0e3959;
+    display:flex;
+}
+
+footer h2{
+    color:#fdfdfd;
+    font-size: 1.5rem;
+}
+
+footer iframe {
+  width: 100%;
+  border: none;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

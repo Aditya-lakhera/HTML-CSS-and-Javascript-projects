@@ -1,0 +1,8 @@
+#### 1. JUST BE THERE...!!! - Tourism portal for trip planning
+
+
+**Description:**
+A responsive tourist website that showcases destinations,packages and trip plans.
+
+**Objective:**
+Learn responsive design(using semantic tags) , layout structuring and semantic HTML and ARIA accessibiltiy for real world sites.

@@ -1,0 +1,5 @@
+This Project is based on-
+1-HTML 
+2-Internal CSS  
+3-Bootstrap
+4-Javascript(logic.js + chart.js)

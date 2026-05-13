@@ -1,0 +1,8 @@
+***Pro-Resume-Schema driven API based***
+Create resume by filling out your details
+
+Skills-
+HTML 
+CSS 
+Bootstrap
+Javasript

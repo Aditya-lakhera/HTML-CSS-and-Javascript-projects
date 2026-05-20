@@ -1,0 +1,45 @@
+*************Project 8 - ''CANVASPLAY'' - RANDOM PROMPT AND VISUAL IDEA ENGINE*************
+
+Skills-
+HTML  
+CSS 
+Vanilla JS 
+
+
+******Canvas API******
+Functions for canvas API-
+1) const ctx = canvas.getContext("2d");
+→ This is the most important step for drawing.through this we get 2D rendering canvas functions access 
+for .(Basically it is a object of canvas api ) 
+All drawing functions (like lineTo, stroke, fillStyle, etc.) are executed on this ctx object.
+
+2) ctx.lineWidth - It is a function that is used to set the width of drawing either it is pen or eraser 
+3) ctx.lineCap = "round";  (Butt , round , square )
+It specifies the shape of tip of end and start point of lines drawn 
+
+4) ctx.strokeStyle = "#000000";
+→ though this we can set the color of stroke style 
+
+5) ctx.beginPath();
+→  it defines the point , we are going to start with 
+
+6) ctx.moveTo(e.offsetX, e.offsetY);
+→ it sets the starting point of new path that is e.offsetX and e.offsetY these are coordinates of 
+mouse in x and y axis 
+
+7) ctx.lineTo(e.offsetX, e.offsetY);
+→ Draws a straight line from the current path's last point to the new mouse coordinates 
+
+8) ctx.stroke();
+→ Apply the strokethe line) to the path that has been defined so far. This makes the line segment visible
+ on the canvas.
+
+9) ctx.clearRect(0, 0, canvas.width, canvas.height)
+→  this is used to clear the area of canvas 
+
+10) canvas.toDataURL("image/png")
+→ method is a built-in browser function that inspects the current state of the canvas and 
+returns a Base64-encoded data URL representing that image
+
+11) ctx.rect(startX, startY, width, height);
+→ this method is use to create square 

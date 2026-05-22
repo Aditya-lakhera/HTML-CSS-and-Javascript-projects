@@ -14,6 +14,7 @@ for .(Basically it is a object of canvas api )
 All drawing functions (like lineTo, stroke, fillStyle, etc.) are executed on this ctx object.
 
 2) ctx.lineWidth - It is a function that is used to set the width of drawing either it is pen or eraser 
+
 3) ctx.lineCap = "round";  (Butt , round , square )
 It specifies the shape of tip of end and start point of lines drawn 
 
